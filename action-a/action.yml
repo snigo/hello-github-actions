@@ -1,0 +1,17 @@
+name: "Hello Actions"
+description: "Greet someone"
+author: "snigo.ogins@gmail.com"
+
+inputs:
+  MY_NAME:
+    description: "Name to greet"
+    required: true
+    default: "World"
+
+runs:
+  using: "Docker"
+  image: "Dockerfile"
+
+branding:
+  icon: "mic"
+  color: "purple"
